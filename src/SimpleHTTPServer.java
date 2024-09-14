@@ -25,10 +25,10 @@ public class SimpleHTTPServer {
                     }
                     // 2. Prepare an HTTP response
                     Date today = new Date();
-                    String httpresponse = "HTTP/1.1 200 OK\r\n\r\n" + today;
+                    String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + today;
                     // 3. Send HTTP response to the client
-                    clientSocket.getOutputStream().write(httpresponse.getBytes("UTF-8"));
-                    // 4. Close the socket
+                    clientSocket.getOutputStream().write(httpResponse.getBytes("UTF-8"));
+                    // 4. Close the socket automatically
 
                 }
             }
